@@ -4,8 +4,12 @@
   "main": "index.js",
   "author": "David Ridgley",
   "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js"
+  },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.2"
   }
 }
