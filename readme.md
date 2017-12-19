@@ -1,6 +1,6 @@
 # Git Commands
 
-git init - Create a new git repo
+git init - Create a new git repo locally on your machine
 
 # Order to run commands in for repo push
 git status - View the changes to project code
