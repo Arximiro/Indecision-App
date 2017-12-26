@@ -26,9 +26,11 @@ export default class IndecisionApp extends React.Component {
         this.setState(() => ({selectedOption: option, modalOpen: true}));
     };
     handleAddOption = (option) => {
+        const lcOptions = []
+        this.state.options.forEach((option) => lcOptions.push(option.toLowerCase()));
         if(!option) {
             return 'Enter a valid value';
-        } else if (this.state.options.indexOf(option) > -1) {
+        } else if (lcOptions.indexOf(option.toLowerCase()) > -1) {
             return 'This option already exists';
         }
         this.setState((prevState) => ({options: prevState.options.concat(option)}));
